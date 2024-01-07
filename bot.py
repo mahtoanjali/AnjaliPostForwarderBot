@@ -22,12 +22,12 @@ except:
 @bot.on(events.NewMessage(pattern="/start"))
 async def _(event):
     ok = await bot(GetFullUserRequest(event.sender_id))
-    await event.reply(f"Hi `{ok.user.first_name}`!\n\nI am a channel post forwarder bot!! Read /help to know more!\n\nI can be used in only two channels (one user) at a time. Kindly deploy your own bot.", buttons=[Button.url("Updates Channel", url="https://t.me/roBots_Hub"),Button.url("Repo", url="https://github.com/stark-Prince/PostForwarderBot"), Button.url("Dev", url="https://t.me/its_Prince")], link_preview=False)
+    await event.reply(f"Hi `{ok.user.first_name}`!\n\nI am a channel post forwarder bot!! Read /help to know more!\n\nI can be used in only two channels (one user) at a time. Kindly deploy your own bot.", buttons=[Button.url("Updates Channel", url="https://t.me/+fztuVtP1frMwYTk1"),Button.url("Repo", url="https://github.com/mahtoanjali/AnjaliPostForwarderBot"), Button.url("Mahto", url="https://t.me/QUEENx_GOD")], link_preview=False)
 
 
 @bot.on(events.NewMessage(pattern="/help"))
 async def helpp(event):
-    await event.reply("**Help menu**\n\nThis bot will send all new posts in one channel to the other channel. (without forwarded tag)!\nIt can be used only in two channels at a time, so kindly deploy your own bot from [here](https://github.com/stark-Prince/PostForwarderBot).\n\nAdd me to both the channels and make me an admin in both, and all new messages would be autoposted on the linked channel!!")
+    await event.reply("**Help menu**\n\nThis bot will send all new posts in one channel to the other channel. (without forwarded tag)!\nIt can be used only in two channels at a time, so kindly deploy your own bot from [here](https://github.com/mahtoanjali/AnjaliPostForwarderBot).\n\nAdd me to both the channels and make me an admin in both, and all new messages would be autoposted on the linked channel!!")
 
 @bot.on(events.NewMessage(incoming=True, chats=from_channel)) 
 async def _(event): 
