@@ -1,7 +1,7 @@
 {
     "name": "PostForwarderBot",
     "description": "Open-Source bot to forward post from one channel to another",
-    "repository": "https://github.com/stark-Prince/PostForwarderBot",
+    "repository": "https://github.com/mahtoanjali/AnjaliPostForwarderBot",
     "keywords": [
       "forward", 
       "telethon",
